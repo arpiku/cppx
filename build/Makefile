@@ -153,6 +153,30 @@ src/funcs.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppx.dir/build.make CMakeFiles/cppx.dir/src/funcs.cpp.s
 .PHONY : src/funcs.cpp.s
 
+src/k0.o: src/k0.cu.o
+.PHONY : src/k0.o
+
+# target to build an object file
+src/k0.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppx.dir/build.make CMakeFiles/cppx.dir/src/k0.cu.o
+.PHONY : src/k0.cu.o
+
+src/k0.i: src/k0.cu.i
+.PHONY : src/k0.i
+
+# target to preprocess a source file
+src/k0.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppx.dir/build.make CMakeFiles/cppx.dir/src/k0.cu.i
+.PHONY : src/k0.cu.i
+
+src/k0.s: src/k0.cu.s
+.PHONY : src/k0.s
+
+# target to generate assembly for a file
+src/k0.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppx.dir/build.make CMakeFiles/cppx.dir/src/k0.cu.s
+.PHONY : src/k0.cu.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/funcs.o"
 	@echo "... src/funcs.i"
 	@echo "... src/funcs.s"
+	@echo "... src/k0.o"
+	@echo "... src/k0.i"
+	@echo "... src/k0.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -15,14 +15,23 @@ Debug build: `cmake -B build-debug -DCMAKE_BUILD_TYPE=Debug .`
 - `src/main.cpp` - entry point
 - `src/funcs.cpp` / `src/funcs.h` - C++ utilities
 - `src/k0.cu` - CUDA kernel with Tensor Core MMA (`mma.sync.aligned.m16n8k8`)
+- `src/header.h` - inline helpers (`foo`, `lol` template variable)
 
 ## Requirements
 
 - CMake 3.18+
 - NVCC with CUDA Toolkit (kernel uses tensor core intrinsics)
-- C++14
+- C++17
+
+## CUDA Architecture Targets
+
+- `sm_90a` — Hopper (with acceleration structures)
+- `sm_120` — Blackwell
+
+Both architectures require CUDA toolkit support (verified on CUDA 13.2).
 
 ## Key Notes
 
-- Kernel uses TF32 tensor core MMA (16x8x8 tile), validates results against CPU reference within 1% tolerance
-- Code has intentional compile errors (see `lol<float> = new float();` on line 13 of main.cpp - missing template instantiation)
+- Kernel uses TF32 tensor core MMA (16×8×8 tile), validates results against CPU reference within 1% tolerance
+- `.zed/debug.json` has preconfigured debug/release launch tasks for Zed editor
+- `.gitignore` excludes `build/`, `build-debug/`, `build-release/`, `*.o`, `*.out`, `run`, `cppx`, `.cache/`, and `compile_commands.json`

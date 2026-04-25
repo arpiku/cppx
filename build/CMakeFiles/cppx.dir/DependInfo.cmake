@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/arpiku/cppx/src/k0.cu" "CMakeFiles/cppx.dir/src/k0.cu.o" "gcc" "CMakeFiles/cppx.dir/src/k0.cu.o.d"
   "/home/arpiku/cppx/src/funcs.cpp" "CMakeFiles/cppx.dir/src/funcs.cpp.o" "gcc" "CMakeFiles/cppx.dir/src/funcs.cpp.o.d"
   "/home/arpiku/cppx/src/main.cpp" "CMakeFiles/cppx.dir/src/main.cpp.o" "gcc" "CMakeFiles/cppx.dir/src/main.cpp.o.d"
   "" "cppx" "gcc" "CMakeFiles/cppx.dir/link.d"

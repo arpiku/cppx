@@ -1,12 +1,6 @@
 #include "funcs.h"
 
-void longprinter() {
-   for(int i = 0; i < 100; i++) {
-       std::cout << "___________________________" << std::endl;
-   }
-}
-
-int dot_roduct(std::vector<int> a, std::vector<int> b) {
+int dot_product(std::vector<int> a, std::vector<int> b) {
     if(a.size() != b.size()) {
         return 0;
     }
@@ -16,7 +10,6 @@ int dot_roduct(std::vector<int> a, std::vector<int> b) {
     }
     return result;
 }
-
 
 int adder(int a, int b) {
     return a + b;

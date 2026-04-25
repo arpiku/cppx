@@ -1,18 +1,12 @@
 #include "funcs.h"
 #include "header.h"
 
-
 int getSum(int a) {
     int sum = 0; for (int i = 0; i < a; i++)  {
         sum +=i;
     }
     return sum;
 }
-
-void foo() {
-    std::cout << "asdf" << std::endl;
-}
-
 
 int productOfElements(const std::vector<int>& values) {
     int product = 1;
@@ -22,10 +16,7 @@ int productOfElements(const std::vector<int>& values) {
     return product;
 }
 
-
 int main() {
-    lol<float> = new float();
-    foo();
     int x = foo(5);
 
     std::vector<int> v1 = {0,2,3,5};

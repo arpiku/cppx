@@ -1,3 +1,0 @@
-/home/arpiku/cppx/build-debug/CMakeFiles/cppx.dir
-/home/arpiku/cppx/build-debug/CMakeFiles/edit_cache.dir
-/home/arpiku/cppx/build-debug/CMakeFiles/rebuild_cache.dir

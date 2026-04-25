@@ -85,12 +85,12 @@ clean: CMakeFiles/cppx.dir/clean
 CMakeFiles/cppx.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppx.dir/build.make CMakeFiles/cppx.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppx.dir/build.make CMakeFiles/cppx.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/arpiku/cppx/build/CMakeFiles --progress-num=1,2,3 "Built target cppx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/arpiku/cppx/build/CMakeFiles --progress-num=1,2,3,4 "Built target cppx"
 .PHONY : CMakeFiles/cppx.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cppx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arpiku/cppx/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arpiku/cppx/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cppx.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/arpiku/cppx/build/CMakeFiles 0
 .PHONY : CMakeFiles/cppx.dir/rule
@@ -102,7 +102,7 @@ cppx: CMakeFiles/cppx.dir/rule
 # codegen rule for target.
 CMakeFiles/cppx.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppx.dir/build.make CMakeFiles/cppx.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/arpiku/cppx/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target cppx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/arpiku/cppx/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target cppx"
 .PHONY : CMakeFiles/cppx.dir/codegen
 
 # clean rule for target.
