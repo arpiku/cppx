@@ -5,22 +5,14 @@
 
 [
   {
-    "label": "Debug 0",
+    "label": "Debug cppx",
     "adapter": "CodeLLDB",
     "request": "launch",
-    "program": "${ZED_WORKTREE_ROOT}/a.out",
-    "cwd": "${ZED_WORKTREE_ROOT}",
-  },
-
-  {
-    "label": "Debug 1",
-    "adapter": "CodeLLDB",
-    "request": "launch",
-    "program": "${ZED_WORKTREE_ROOT}/a.out",
+    "program": "${ZED_WORKTREE_ROOT}/build-debug/cppx",
     "cwd": "${ZED_WORKTREE_ROOT}",
     "build": {
-      "command": "g++",
-      "args": ["-std=c++14", "-g", "main.cpp", "a.cpp", "-o", "a.out"],
-    },
-  },
+      "command": "bash",
+      "args": ["-c", "cmake -B build-debug -DCMAKE_BUILD_TYPE=Debug -S . && cmake --build build-debug"]
+    }
+  }
 ]
