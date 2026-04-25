@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <cuda_bf16.h>
 #include <cuda_runtime.h>
 #include <cublas_v2.h>
@@ -6,14 +7,16 @@
 #include <cstddef>
 #include <cstdio>
 #include <cstdlib>
+#include <vector>
+#include <random>
 
 
 namespace Bencher {
 
 struct GemmShape {
-    int m;
-    int n;
-    int k;
+    uint m;
+    uint n;
+    uint k;
 };
 
 struct ErrorMetrics {
@@ -36,6 +39,17 @@ struct BenchmarkResult {
 
     ErrorMetrics error{};
 };
+
+
+struct TestCase {
+    GemmShape shape{};
+    std::vector<float> a_f32;
+    std::vector<float> b_f32;
+    std::vector<float> c_f32;
+    float alpha = 1.0f;
+    float beta = 0.0f;
+};
+
 
 inline void cuda_check_impl(cudaError_t status,
                             const char* expr,
@@ -121,4 +135,7 @@ BenchmarkResult benchmark_kernel(const GemmShape& shape,
                                  int warmup_iters = 10,
                                  int bench_iters = 100,
                                  cudaStream_t stream = 0);
+
+TestCase generate_square_case(uint n, std::uint32_t seed);
+
 }  // namespace Bencher
