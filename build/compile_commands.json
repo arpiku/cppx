@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/arpiku/cppx/build",
+  "command": "/usr/bin/c++   -std=gnu++14 -o CMakeFiles/cppx.dir/src/main.cpp.o -c /home/arpiku/cppx/src/main.cpp",
+  "file": "/home/arpiku/cppx/src/main.cpp",
+  "output": "CMakeFiles/cppx.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/arpiku/cppx/build",
+  "command": "/usr/bin/c++   -std=gnu++14 -o CMakeFiles/cppx.dir/src/funcs.cpp.o -c /home/arpiku/cppx/src/funcs.cpp",
+  "file": "/home/arpiku/cppx/src/funcs.cpp",
+  "output": "CMakeFiles/cppx.dir/src/funcs.cpp.o"
+}
+]

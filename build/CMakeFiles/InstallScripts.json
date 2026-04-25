@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/arpiku/cppx/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
