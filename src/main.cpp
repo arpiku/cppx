@@ -1,11 +1,23 @@
-#include "bencher.h"
+#include <numeric>
+#include <vector>
 #include <iostream>
-#include <ranges>
+#include <algorithm>
 
-const uint32_t SEED = 54;
 
 int main() {
-    Bencher::TestCase t = Bencher::generate_square_case(100,SEED);
+    std::vector<int> vec(100);
+    std::iota(vec.rbegin(), vec.rend(), 0);
+
+    for (int i : vec) {
+        std::cout << i << " ";
+    }
+
+    std::cout << " ---------- \n";
+    std::reverse(vec.begin(), vec.begin() + 50);
+
+    for (int i : vec) {
+        std::cout << i << " ";
+    }
 
     return 0;
 }
